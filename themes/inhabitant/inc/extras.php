@@ -53,3 +53,22 @@ function inhabitant_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'inhabitant_logo_url_title' );
 
+//about page changes **** make hanges to make this more clear
+function about_page_hero() {
+        if( !is_page_template('page-templates/about.php')){
+			return;}
+
+			$img = CFS () -> get( 'background_image' ); 
+			if (!$img) {return;}
+
+			$custom_css = ".page-template-about .entry-header{
+							background: 
+							linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+							url({$img}) no-repeat center bottom; 
+							background-size:cover, cover;
+							height:100vh;
+						}";
+			wp_add_inline_style( 'inhabitant-style', $custom_css );
+} 
+add_action( 'wp_enqueue_scripts', 'about_page_hero' );
+

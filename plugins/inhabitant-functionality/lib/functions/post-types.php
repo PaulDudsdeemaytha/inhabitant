@@ -15,7 +15,7 @@ function product_post_type() {
 		'archives'              => 'Product Archives',
 		'attributes'            => 'Product Attribute',
 		'parent_item_colon'     => 'Product Item:',
-		'all_items'             => 'All Items',
+		'all_items'             => 'All Products',
 		'add_new_item'          => 'Add New Product',
 		'add_new'               => 'Add New',
 		'new_item'              => 'New Product',
