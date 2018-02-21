@@ -11,15 +11,20 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-container">
-				<p>hello</p>
-				<i class="far fa-address-book"></i>
-
-
+				<ul>
+					<li><i class="far fa-envelope"></i> info@inhabitant.com</li>
+					<li><i class="fas fa-phone"></i> 778-456-7891</li>
+					<li><i class="fab fa-facebook-square"></i></li>
+				</ul>
+				<ul>
+					<li>Monday-Friday: 9am to 5pm</li>
+					<li>Saturday:10am to 2am</li>
+					<li>Sunday: Closed</li>
+				</ul>
+				
 					<div></div>
 				</div>
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
