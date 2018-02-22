@@ -1,10 +1,9 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-
 @font-face {
     font-family: 'Merriweather';
-    src: url('../lib/fonts/Merriweather-BoldItalic.eot');
+    src: url('../lib/fonts/Merriweather-BoldItalic.woff');
     src: url('../lib/fonts/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('../lib/fonts/Merriweather-BoldItalic.woff') format('woff'),
         url('../lib/fonts/Merriweather-BoldItalic.ttf') format('truetype'),
@@ -15,7 +14,7 @@
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../lib/fonts/Merriweather-Light.eot');
+    src: url('../lib/fonts/Merriweather-Light.woff');
     src: url('../lib/fonts/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
         url('../lib/fonts/Merriweather-Light.woff') format('woff'),
         url('../lib/fonts/Merriweather-Light.ttf') format('truetype'),
@@ -26,7 +25,7 @@
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../lib/fonts/Merriweather-Bold.eot');
+    src: url('../lib/fonts/Merriweather-Bold.woff');
     src: url('../lib/fonts/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
         url('../lib/fonts/Merriweather-Bold.woff') format('woff'),
         url('../lib/fonts/Merriweather-Bold.ttf') format('truetype'),
@@ -37,19 +36,12 @@
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../lib/fonts/Merriweather-LightItalic.eot');
+    src: url('../lib/fonts/Merriweather-LightItalic.woff');
     src: url('../lib/fonts/Merriweather-LightItalic.eot?#iefix') format('embedded-opentype'),
         url('../lib/fonts/Merriweather-LightItalic.woff') format('woff'),
         url('../lib/fonts/Merriweather-LightItalic.ttf') format('truetype'),
         url('../lib/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic') format('svg');
     font-weight: 300;
     font-style: italic;
-}
-
-*{
-    font-size: 16px;
-    color:#404040;
-    line-height: 1.75;
-    font-family: 'Merryweather', Arial, Helvetica, sans-serif;
 }
 

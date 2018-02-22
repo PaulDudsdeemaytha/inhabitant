@@ -227,37 +227,31 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-BoldItalic.eot");
+  src: url("../lib/fonts/Merriweather-BoldItalic.woff");
   src: url("../lib/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-BoldItalic.woff") format("woff"), url("../lib/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../lib/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-Light.eot");
+  src: url("../lib/fonts/Merriweather-Light.woff");
   src: url("../lib/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-Light.woff") format("woff"), url("../lib/fonts/Merriweather-Light.ttf") format("truetype"), url("../lib/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-Bold.eot");
+  src: url("../lib/fonts/Merriweather-Bold.woff");
   src: url("../lib/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-Bold.woff") format("woff"), url("../lib/fonts/Merriweather-Bold.ttf") format("truetype"), url("../lib/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-LightItalic.eot");
+  src: url("../lib/fonts/Merriweather-LightItalic.woff");
   src: url("../lib/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-LightItalic.woff") format("woff"), url("../lib/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../lib/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
-
-* {
-  font-size: 16px;
-  color: #404040;
-  line-height: 1.75;
-  font-family: 'Merryweather', Arial, Helvetica, sans-serif; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -271,7 +265,8 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -700,3 +695,49 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background-image: url("../../images/dark-wood.png");
+  color: #fff;
+  height: 350px; }
+  .site-footer .footer-blocks-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: solid black 1px;
+    padding: 3rem 0 3rem 0;
+    margin-left: 12%;
+    margin-right: 12%; }
+
+.footer-blocks-container ul {
+  list-style: none;
+  line-height: 2.5rem;
+  padding: 0;
+  margin: 0; }
+
+.footer-hours,
+.footer-contact {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+
+.footer-logo-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  .footer-logo-container .footer-logo {
+    margin-top: 24px;
+    max-width: 100%;
+    text-align: right; }
+    .footer-logo-container .footer-logo img {
+      max-width: 50%; }
+
+.footer-info {
+  text-align: center;
+  padding: 0;
+  text-transform: uppercase; }
+  .footer-info p {
+    margin: 0; }
+
+.footer-hours p,
+.footer-contact p {
+  text-transform: uppercase;
+  color: #d99054;
+  font-size: 1.5rem; }

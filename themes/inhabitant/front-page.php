@@ -35,8 +35,6 @@ get_header(); ?>
 		<?php endif ?>
 	</section>
 
-
-
 <!-- // Define our WP Query Parameters -->
 <?php $journalpost = new WP_Query( 'posts_per_page=3' ); ?>
  
@@ -45,18 +43,16 @@ get_header(); ?>
  
 <!-- // Display the Post Title with Hyperlink -->
 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
- 
-<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-		</div><!-- .entry-meta -->
 
 <?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
+<div class="entry-meta">
+	<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+</div><!-- .entry-meta -->
 <!-- Link to each post-->
 <a href="<?php echo get_permalink(); ?>"> Read Entry</a>
 </br>
-
 
 <!-- // Repeat the process and reset once it hits the limit -->
 <?php 
@@ -69,6 +65,6 @@ wp_reset_postdata();
 	</div><!-- #primary -->
 
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
 

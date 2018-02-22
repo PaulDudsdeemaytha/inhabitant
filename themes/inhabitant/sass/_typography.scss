@@ -11,6 +11,7 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-size: $font__line-height-body;
 }
 
 /* Headings */
@@ -66,3 +67,4 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+

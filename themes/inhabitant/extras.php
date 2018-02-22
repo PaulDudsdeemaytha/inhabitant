@@ -23,12 +23,6 @@ add_filter( 'body_class', 'inhabitant_body_classes' );
 //this function changes the logo to our inhabitant logo
 function inhabitant_logo() { ?>
 	<style type="text/css">
-		/* .login {
-		background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		opacity: 0.5;
-		} */
         #login h1 a, .login h1 a {
         background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text-dark.svg);
 		height:65px;

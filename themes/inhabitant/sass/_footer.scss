@@ -1,0 +1,53 @@
+.site-footer{
+    background-image: url("../../images/dark-wood.png");
+    color: #fff;
+    height: 350px;
+    .footer-blocks-container {
+        display: flex;
+        border-top: solid black 1px;
+        padding: 3rem 0 3rem 0;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+.footer-blocks-container ul {
+    list-style: none;
+    line-height: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-hours,
+.footer-contact {
+    flex-basis: 25%;
+}
+
+.footer-logo-container{
+    flex-basis: 50%;
+    .footer-logo{
+        margin-top:24px;
+        max-width: 100%;
+        text-align: right;
+        img{
+            max-width: 50% ;
+        }
+    }
+}
+
+.footer-info{
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    p{
+        margin: 0;
+    }
+}
+
+.footer-hours p,
+.footer-contact p,{
+    text-transform: uppercase; 
+    color:$color_footer_head;
+    font-size: 1.5rem;
+
+}
