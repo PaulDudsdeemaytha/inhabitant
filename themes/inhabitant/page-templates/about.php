@@ -1,7 +1,7 @@
 <?php
 /** 
 * 
-*Template Name: About Page
+*Template Name: About
 *@package Inhabitant
 */
 
@@ -15,21 +15,25 @@ get_header(); ?>
 				
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="entry-header">
+                    <div class="title-header">
                             <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    </div>
                         </header><!-- .entry-header -->
 
                         <div class="entry-content">
                         <!-- *****************Create divs for this later**************** -->
-                       
-                        <?php echo CFS()->get( 'our_story' ); ?>
-                        <?php echo CFS()->get( 'our_team' ); ?>
-                            <?php the_content(); ?>
-                            <?php
-                                wp_link_pages( array(
-                                    'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-                                    'after'  => '</div>',
-                                ) );
-                            ?>
+                            <div class="container">
+                                
+                                <?php echo CFS()->get( 'our_story' ); ?>
+                                <?php echo CFS()->get( 'our_team' ); ?>
+                                    <?php the_content(); ?>
+                                    <?php
+                                        wp_link_pages( array(
+                                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+                                            'after'  => '</div>',
+                                        ) );
+                                    ?>
+                            </div>
                         </div><!-- .entry-content -->
                     </article><!-- #post-## -->
 
@@ -38,5 +42,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
