@@ -227,31 +227,33 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-BoldItalic.woff");
-  src: url("../lib/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-BoldItalic.woff") format("woff"), url("../lib/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../lib/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../lib/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../lib/fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../lib/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../lib/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-Light.woff");
-  src: url("../lib/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-Light.woff") format("woff"), url("../lib/fonts/Merriweather-Light.ttf") format("truetype"), url("../lib/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../lib/fonts/Merriweather-Light.woff");
+  src: url("../../lib/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../lib/fonts/Merriweather-Light.woff") format("woff"), url("../../lib/fonts/Merriweather-Light.ttf") format("truetype"), url("../../lib/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-Bold.woff");
-  src: url("../lib/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-Bold.woff") format("woff"), url("../lib/fonts/Merriweather-Bold.ttf") format("truetype"), url("../lib/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../lib/fonts/Merriweather-Bold.woff");
+  src: url("../../lib/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../lib/fonts/Merriweather-Bold.woff") format("woff"), url("../../lib/fonts/Merriweather-Bold.ttf") format("truetype"), url("../../lib/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../lib/fonts/Merriweather-LightItalic.woff");
-  src: url("../lib/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../lib/fonts/Merriweather-LightItalic.woff") format("woff"), url("../lib/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../lib/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../lib/fonts/Merriweather-LightItalic.woff");
+  src: url("../../lib/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../lib/fonts/Merriweather-LightItalic.woff") format("woff"), url("../../lib/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../lib/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
+
+* {
+  font-family: 'Merriweather'; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -311,6 +313,9 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+a {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -651,6 +656,36 @@ a {
     line-height: 2rem; }
     .entry-content .container h2 {
       text-align: center; }
+
+.home-hero img {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto; }
+
+.site-main .product-type-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: auto; }
+  .site-main .product-type-box img {
+    max-height: 100px;
+    width: auto;
+    max-width: none; }
+
+.site-main h2 {
+  text-align: center; }
+
+.site-main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: auto; }
+  .site-main .container img {
+    max-height: 250px;
+    width: auto;
+    max-width: none; }
 
 /*--------------------------------------------------------------
 # Media

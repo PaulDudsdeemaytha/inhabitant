@@ -78,3 +78,34 @@
 		}
 	}
 }
+
+
+//front page
+.home-hero img {
+	min-height: 100vh;
+	width: 100%;
+	margin: auto;
+}
+.site-main .product-type-box{
+	display: flex;
+	width: 1120px;
+	margin: auto;
+	img{
+		max-height: 100px;
+		width: auto;
+		max-width: none;
+	}
+}
+.site-main h2{
+	text-align: center;
+}
+.site-main .container{
+	display: flex;
+	width: 1120px;
+	margin: auto;
+	img{
+		max-height: 250px;
+		width: auto;
+		max-width: none;
+	}
+}

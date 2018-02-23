@@ -49,7 +49,7 @@ add_filter( 'login_headertitle', 'inhabitant_logo_url_title' );
 
 //about page changes **** make hanges to make this more clear
 function about_page_hero() {
-        if( !is_page_template('page-templates/about.php')){
+        if( is_page_template('page-templates/about.php')){
 			return;}
 
 			$img = CFS () -> get( 'background_image' ); 
