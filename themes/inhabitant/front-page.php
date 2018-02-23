@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 	<!-- home hero banner -->
 	<section class="home-hero">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/home-hero.jpg">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-full.svg">
 	</section>
 
 	<section class="product-type-container">
@@ -55,14 +55,17 @@ get_header(); ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
 				<!-- // Display the Post Title with Hyperlink -->
-		<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+	<div class="journal-info">
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 		</div><!-- .entry-meta -->
+		<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+				</br>
 		<!-- Link to each post-->
 		<a href="<?php echo get_permalink(); ?>"> Read Entry</a>
 		</br>
 		</div>
+	</div>
 	<!-- // Repeat the process and reset once it hits the limit -->
 	<?php 
 	endwhile;

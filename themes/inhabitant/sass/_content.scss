@@ -81,31 +81,69 @@
 
 
 //front page
-.home-hero img {
+.site-main h2{
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem; 
+	font-family: 'Novecento', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.home-hero {
 	min-height: 100vh;
 	width: 100%;
 	margin: auto;
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url(../../images/home-hero.jpg);
+	background-size: cover, cover;
+	background-repeat: no-repeat;
+	img {
+		top: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+	}
 }
+
 .site-main .product-type-box{
 	display: flex;
+	justify-content: space-between;
 	width: 1120px;
 	margin: auto;
+	text-align: center;
+	line-height: 1.75rem;
+	.product-type-box-wrapper{
+		border: solid $color_border_box 1px;
+		border-top: solid $color_border_box 5px;
+		flex-basis: 23.5%;
+		padding: 12px;
+	}
 	img{
-		max-height: 100px;
+		max-height: 70px;
 		width: auto;
 		max-width: none;
 	}
 }
-.site-main h2{
-	text-align: center;
-}
+
+
+
 .site-main .container{
 	display: flex;
+	justify-content: space-between;
 	width: 1120px;
 	margin: auto;
+	margin-bottom: 100px;
+	.journal-block{
+		height: 400px;
+		flex-basis: 32%; 
+		border: solid $color_border_box 1px;
+		.journal-info{
+			padding: 10px;
+		}
+	}
 	img{
-		max-height: 250px;
-		width: auto;
-		max-width: none;
+			max-height: 250px;
+			width: auto;
+			// max-width: none;
 	}
 }

@@ -46,8 +46,11 @@
 
 .footer-hours p,
 .footer-contact p,{
+    font-family: 'Novecento', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
     text-transform: uppercase; 
     color:$color_footer_head;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 
 }
