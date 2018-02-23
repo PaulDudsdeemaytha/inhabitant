@@ -48,14 +48,50 @@
 	display: block;
 }
 
+// HEADER **************
+.main-navigation{
+	position: fixed;
+	display: flex;
+	padding-left:11%;
+	padding-right:11%;
+	height: 50px;
+	width:100%;
+	background-color: white;
+	z-index: 999;
+	// background-color: rgba(255,255,255,0.5);
+	border-bottom: solid 1px $color_border_box;
+	.nav-logo-container{
+		flex-basis: 50%;
+		img{
+			max-height: 40px;
+			margin-top: 5px;
+		}
+	}
+	.menu-menu-1-container{
+		width:100%;
+		flex-basis: 50%;
+		ul{
+			display: flex;
+			justify-content: flex-end;
+			
+			li{
+				margin-top: 14px;
+				margin-right: 30px;
+				a{
+					color:$color_button_background;
+					font-family: 'Novecento', Arial, Helvetica, sans-serif;
+					&:hover{
+						color:$color__link-visited;
+					}
+				}
+			}
+		}
+	}
+}
 
-// About Page
+// About Page***************
 
-// .page-template-about .entry-header {
-// 	display: flex;
-// 	align-content: center;
-// 	justify-content: center;
-// }
+
 .entry-title {
 	margin: 0;
 	top: 50%;
@@ -117,6 +153,21 @@
 		border-top: solid $color_border_box 5px;
 		flex-basis: 23.5%;
 		padding: 12px;
+		&:hover{
+			border: solid $color_footer_head 1px;
+			border-top: solid $color_footer_head 5px;
+		
+		}
+		.btn{
+			color:white;
+			padding: 10px 15px;
+			background-color: $color_button_background;
+			font-family: 'Novecento', Arial, Helvetica, sans-serif;
+			&:hover{
+				background-color:darken($color_button_background, 10%);
+			}
+
+		}
 	}
 	img{
 		max-height: 70px;
@@ -134,16 +185,39 @@
 	margin: auto;
 	margin-bottom: 100px;
 	.journal-block{
-		height: 400px;
+		height: 420px;
 		flex-basis: 32%; 
 		border: solid $color_border_box 1px;
 		.journal-info{
 			padding: 10px;
+			font-size: 0.75rem;
+			position: relative;
+			.storytitle a{
+				color: $color_button_background;
+				font-weight: bold;
+				font-size: 1.5rem;
+				font-family: 'Novecento', Arial, Helvetica, sans-serif;
+				margin-bottom: 20px;
+				&:hover{
+					color:black;
+				}
+			}
+			.readentry {
+				color: black;
+				border: 1px solid black;
+				padding: 10px 25px;
+				&:hover{
+					background-color: $color_button_background;
+					color:white;
+					border: none;
+				}
+			}
 		}
 	}
 	img{
+			min-height: 250px;
 			max-height: 250px;
-			width: auto;
-			// max-width: none;
+			// width: 
+			border-bottom: solid $color_border_box 5px;
 	}
 }

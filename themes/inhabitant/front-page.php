@@ -59,10 +59,12 @@ get_header(); ?>
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 		</div><!-- .entry-meta -->
-		<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+		<div class="storytitle">
+			<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+		</div>
 				</br>
 		<!-- Link to each post-->
-		<a href="<?php echo get_permalink(); ?>"> Read Entry</a>
+		<a class="readentry" href="<?php echo get_permalink(); ?>"> Read Entry</a>
 		</br>
 		</div>
 	</div>
