@@ -10,37 +10,41 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+				
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<div class="container">
+						<div class="product-image-container">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</div>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+						<div class="product-info-container">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-	<div class="entry-content">
-	<?php echo CFS()->get( 'Price' ); ?>
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+						<div class="entry-content">
+							<div class="price">
+							<?php echo CFS()->get( 'Price' ); ?>
+							</div>
+								<?php the_content(); ?>
+								<?php
+									wp_link_pages( array(
+										'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+										'after'  => '</div>',
+									) );
+								?>
+						</div><!-- .entry-content -->
+						<div class="social-container">
+							<button type="button" class="social-button"><i class="fab fa-facebook-square"></i> Like</button>
+							<button type="button" class="social-button"><i class="fab fa-twitter-square"></i> Tweet</button>
+							<button type="button" class="social-button"><i class="fab fa-pinterest"></i> Pin</button>
+						</div>
+						</div>
+					</div>
+				</article><!-- #post-## -->
 
 
 			<?php the_post_navigation(); ?>
@@ -57,5 +61,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -963,7 +963,7 @@ a {
     margin-top: 50px;
     position: relative; }
     .default-index-page .blog-container .entry-header .entry-title {
-      background-color: #248a83;
+      background-color: #248A83;
       font-size: 2.1rem;
       left: 0;
       padding: .75rem 1.5rem;
@@ -979,7 +979,7 @@ a {
       max-width: 100%;
       width: 1500px; }
     .default-index-page .blog-container .entry-header .entry-meta {
-      background-color: #248a83;
+      background-color: #248A83;
       bottom: 0;
       color: #fff;
       display: inline-block;
@@ -990,6 +990,61 @@ a {
       font-size: 0.8rem;
       line-height: 0;
       margin-bottom: 6px; }
+  .default-index-page .blog-container .entry-content {
+    line-height: 1.75rem; }
+  .default-index-page .blog-container .entry-footer .cat-links,
+  .default-index-page .blog-container .entry-footer .tags-links,
+  .default-index-page .blog-container .entry-footer a {
+    text-transform: uppercase;
+    font-family: 'Novecento', Arial, Helvetica, sans-serif; }
+  .default-index-page .blog-container .entry-footer a {
+    color: #248A83; }
+    .default-index-page .blog-container .entry-footer a:hover {
+      color: #2f1339; }
+  .default-index-page .blog-container .entry-footer .cat-links {
+    margin-right: 30px; }
+
+.single-product .site-content {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .single-product .site-content .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px; }
+    .single-product .site-content .container .product-image-container {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .single-product .site-content .container .product-image-container img {
+        height: auto;
+        max-width: 100%; }
+    .single-product .site-content .container .product-info-container {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      padding-left: 50px; }
+      .single-product .site-content .container .product-info-container .entry-content {
+        margin-top: 0; }
+        .single-product .site-content .container .product-info-container .entry-content p {
+          line-height: 1.75rem; }
+      .single-product .site-content .container .product-info-container h1 {
+        font-family: 'Novecento';
+        font-size: 2.5rem;
+        color: #d99054; }
+      .single-product .site-content .container .product-info-container .price {
+        font-family: 'Novecento';
+        font-size: 1.8rem;
+        margin-top: 12px;
+        margin-bottom: 30px; }
+
+.post-type-archive-product .product-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Media
