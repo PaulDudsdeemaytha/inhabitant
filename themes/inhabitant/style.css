@@ -910,7 +910,8 @@ a {
   display: flex;
   width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 100px; }
   .default-index-page h2 {
     font-family: 'Novecento', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -924,9 +925,6 @@ a {
       color: #248A83; }
       .default-index-page h2 a:hover {
         color: #2f1339; }
-  .default-index-page .blog-container {
-    width: 74%;
-    padding-right: 50px; }
   .default-index-page .sidebar {
     width: 26%;
     border-left: solid #e1e1e1 1px;
@@ -948,6 +946,49 @@ a {
       color: #248A83; }
       .default-index-page .sidebar a:hover {
         color: midnightblue; }
+  .default-index-page .readmore {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 25px; }
+    .default-index-page .readmore:hover {
+      background-color: #248A83;
+      color: white;
+      border: none; }
+
+.default-index-page .blog-container {
+  width: 74%;
+  padding-right: 50px;
+  margin-top: 50px; }
+  .default-index-page .blog-container .entry-header {
+    margin-top: 50px;
+    position: relative; }
+    .default-index-page .blog-container .entry-header .entry-title {
+      background-color: #248a83;
+      font-size: 2.1rem;
+      left: 0;
+      padding: .75rem 1.5rem;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 0; }
+      .default-index-page .blog-container .entry-header .entry-title a {
+        color: #fff; }
+    .default-index-page .blog-container .entry-header img {
+      height: auto;
+      max-width: 100%;
+      width: 1500px; }
+    .default-index-page .blog-container .entry-header .entry-meta {
+      background-color: #248a83;
+      bottom: 0;
+      color: #fff;
+      display: inline-block;
+      padding: 1rem;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      line-height: 0;
+      margin-bottom: 6px; }
 
 /*--------------------------------------------------------------
 # Media
