@@ -35,8 +35,9 @@
 /* Asides */
 
 .blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
+.archive .format-aside .entry-title{
 	display: none;
+	margin: 0;
 }
 
 /* Comments */
@@ -92,7 +93,7 @@
 // About Page***************
 
 
-.entry-title {
+.page-template-about .post-10 .entry-title {
 	margin: 0;
 	top: 50%;
 	position: absolute;
@@ -100,17 +101,23 @@
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	color: white;
+	font-family: 'Novecento', Arial, Helvetica, sans-serif;
+	font-size: 3rem;
 }
-.entry-content{
+.page-template-about .entry-content{
 	margin-left: auto;
     margin-right: auto;
-	width: 1120px;
+	width: 1000px;
 	.container {
+		margin-top: 60px;
 		margin-left: 10%;
 		margin-right: 10%;
 		line-height: 2rem;
 		h2{
 		text-align: center;
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		}
 	}
 }
@@ -178,7 +185,7 @@
 
 
 
-.site-main .container{
+.home .site-main .container{
 	display: flex;
 	justify-content: space-between;
 	width: 1120px;
@@ -219,5 +226,33 @@
 			max-height: 250px;
 			// width: 
 			border-bottom: solid $color_border_box 5px;
+	}
+}
+// trying to fix headers of pages so that it doesnt pop over the nav bar
+.entry-title,
+.page-title {
+	margin: 0;
+}
+
+//page.php flexbox
+
+.default-template-page{
+	display: flex;
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	.page-content{
+		width: 74%;
+	}
+	.sidebar{
+		width: 26%;
+		border-left: solid $color_border_box 1px;
+		padding-left: 50px;
+		.widget-title{
+			text-align: left;
+			font-size: 1.5rem;
+			margin-bottom: 0;
+			font-weight: bold;
+		}
 	}
 }
