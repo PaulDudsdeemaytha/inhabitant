@@ -9,12 +9,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main default-template-page" role="main">
-			<div class="page-content">
+			<div class="page-content-container">
+				<div class="page-content">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
+				</div>
 			</div>
 			<div class="sidebar">
 				<?php get_sidebar(); ?>

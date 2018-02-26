@@ -124,7 +124,7 @@
 
 
 //front page
-.site-main h2{
+.home .site-main h2{
 	text-align: center;
 	font-size: 2.5rem;
 	margin-top: 4rem;
@@ -241,18 +241,56 @@
 	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
-	.page-content{
+	h2{
+		font-family: 'Novecento', Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		font-size: 2.25rem;
+		margin-top:50px;
+	}
+	.page-content-container{
 		width: 74%;
+		.page-content{
+			padding-right:50px;
+			margin-top: 75px;
+			line-height: 2rem;
+		}
 	}
 	.sidebar{
 		width: 26%;
 		border-left: solid $color_border_box 1px;
 		padding-left: 50px;
+		margin-top: 50px;
 		.widget-title{
 			text-align: left;
 			font-size: 1.5rem;
-			margin-bottom: 0;
+			font-family: 'Novecento', Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			padding-top:25px;
+		}
+		.day-of-week{
 			font-weight: bold;
 		}
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			color: $color_button_background;
+			&:hover{
+				color:$color__link-hover;
+			}
+		}
+	}
+}
+.default-template-page header {
+	display: none;
+}
+
+// contact form styling
+.wpcf7-form {
+	label{
+		text-transform: uppercase;
+		font-family: 'Novecento', Arial, Helvetica, sans-serif;
 	}
 }
