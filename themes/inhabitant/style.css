@@ -711,10 +711,12 @@ a {
     margin-right: 10%;
     line-height: 2rem; }
     .page-template-about .entry-content .container h2 {
+      font-family: 'Novecento', Arial, Helvetica, sans-serif;
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 2rem; }
 
 .home .site-main h2 {
   text-align: center;
@@ -861,6 +863,19 @@ a {
 .wpcf7-form label {
   text-transform: uppercase;
   font-family: 'Novecento', Arial, Helvetica, sans-serif; }
+
+.error-404 .error-404-page-content {
+  margin-top: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px; }
+  .error-404 .error-404-page-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .error-404 .error-404-page-content a {
+    color: #248A83; }
+    .error-404 .error-404-page-content a:hover {
+      color: midnightblue; }
 
 /*--------------------------------------------------------------
 # Media

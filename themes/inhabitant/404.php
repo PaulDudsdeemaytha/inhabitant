@@ -12,12 +12,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
-				</header><!-- .page-header -->
+			<section class="error-404 not-found default-template-page">
 
-				<div class="page-content">
+				<div class="error-404-page-content">
+					<h1> Oops! That page can't be found. </h1>
+
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
@@ -47,6 +46,9 @@ get_header(); ?>
 					?>
 
 				</div><!-- .page-content -->
+				<div class="sidebar">
+				<?php get_sidebar(); ?>
+			</div>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
