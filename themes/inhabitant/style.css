@@ -970,7 +970,8 @@ a {
       position: absolute;
       margin-top: 2.25rem;
       max-width: 75%;
-      top: 0; }
+      top: 0;
+      color: #fff; }
       .default-index-page .blog-container .entry-header .entry-title a {
         color: #fff; }
     .default-index-page .blog-container .entry-header img {
