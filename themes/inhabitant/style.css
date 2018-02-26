@@ -829,6 +829,14 @@ a {
     text-transform: uppercase;
     font-size: 2.25rem;
     margin-top: 50px; }
+    .default-template-page h2 a {
+      font-family: 'Novecento', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      margin-top: 50px;
+      color: #248A83; }
+      .default-template-page h2 a:hover {
+        color: #2f1339; }
   .default-template-page .page-content-container {
     width: 74%; }
     .default-template-page .page-content-container .page-content {
@@ -876,6 +884,25 @@ a {
     color: #248A83; }
     .error-404 .error-404-page-content a:hover {
       color: midnightblue; }
+
+.search-content-container {
+  margin-bottom: 100px;
+  padding-right: 50px;
+  width: 74%; }
+  .search-content-container .page-title {
+    border-bottom: solid #e1e1e1 1px;
+    padding-bottom: 20px;
+    margin-top: 75px; }
+  .search-content-container p {
+    line-height: 2rem; }
+  .search-content-container .readmore {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 25px; }
+    .search-content-container .readmore:hover {
+      background-color: #248A83;
+      color: white;
+      border: none; }
 
 /*--------------------------------------------------------------
 # Media

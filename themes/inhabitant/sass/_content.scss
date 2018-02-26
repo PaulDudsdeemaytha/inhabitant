@@ -248,6 +248,16 @@
 		text-transform: uppercase;
 		font-size: 2.25rem;
 		margin-top:50px;
+		a{
+			font-family: 'Novecento', Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			font-size: 2.25rem;
+			margin-top:50px;
+			color: $color_button_background;
+			&:hover{
+				color: #2f1339;
+			}
+		}
 	}
 	.page-content-container{
 		width: 74%;
@@ -314,4 +324,35 @@
 			color:$color__link-hover;
 		}
 	}
+}
+
+//searchpage
+
+.search-content-container{
+	margin-bottom: 100px;
+	padding-right:50px;
+	width: 74%;
+	.page-title{
+		border-bottom: solid $color_border_box 1px;
+		padding-bottom:20px;
+		margin-top: 75px;
+	}
+	p{
+		line-height: 2rem;
+	}
+	.readmore {
+		color: black;
+		border: 1px solid black;
+		padding: 10px 25px;
+		&:hover{
+			background-color: $color_button_background;
+			color:white;
+			border: none;
+		}
+	}
+}
+
+//index page
+.default-index-page{
+	
 }
