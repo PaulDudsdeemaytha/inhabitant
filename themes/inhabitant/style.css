@@ -904,6 +904,51 @@ a {
       color: white;
       border: none; }
 
+.default-index-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .default-index-page h2 {
+    font-family: 'Novecento', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    margin-top: 50px; }
+    .default-index-page h2 a {
+      font-family: 'Novecento', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      margin-top: 50px;
+      color: #248A83; }
+      .default-index-page h2 a:hover {
+        color: #2f1339; }
+  .default-index-page .blog-container {
+    width: 74%;
+    padding-right: 50px; }
+  .default-index-page .sidebar {
+    width: 26%;
+    border-left: solid #e1e1e1 1px;
+    padding-left: 50px;
+    margin-top: 50px; }
+    .default-index-page .sidebar .widget-title {
+      text-align: left;
+      font-size: 1.5rem;
+      font-family: 'Novecento', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding-top: 25px; }
+    .default-index-page .sidebar .day-of-week {
+      font-weight: bold; }
+    .default-index-page .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+    .default-index-page .sidebar a {
+      color: #248A83; }
+      .default-index-page .sidebar a:hover {
+        color: midnightblue; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
