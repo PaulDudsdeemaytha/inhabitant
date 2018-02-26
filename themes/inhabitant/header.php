@@ -28,7 +28,9 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="nav-logo-container">
+						<div class="logo-nav-box">
 					<a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg"/></a>
+						</div>
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

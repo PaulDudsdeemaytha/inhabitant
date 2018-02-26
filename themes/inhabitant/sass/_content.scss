@@ -59,10 +59,13 @@
 	width:100%;
 	background-color: white;
 	z-index: 999;
-	// background-color: rgba(255,255,255,0.5);
 	border-bottom: solid 1px $color_border_box;
 	.nav-logo-container{
 		flex-basis: 50%;
+		.logo-nav-box{
+			max-height:40px;
+			max-width: 52px;
+		}
 		img{
 			max-height: 40px;
 			margin-top: 5px;
@@ -522,7 +525,42 @@
 }
 
 // archive product shop page **************
-
+.post-type-archive-product .shop-nav-container{
+	padding-top:100px;
+	width: 1140px;
+	height: 250px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	border-bottom: dashed $color_border_box 1px;
+	h1{
+		margin:0;
+		margin-bottom: 20px;
+		font-size: 2.5rem;
+		font-family: 'Novecento';
+	}
+	a{
+		color: $color_button_background;
+		font-family: 'Novecento';
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin-left:18px;
+		margin-right:18px;
+			&:hover{
+				color: #2f1339;
+				cursor: pointer;
+			}
+		}
+}
+	
 .post-type-archive-product .product-flex{
 	display: flex;
+	width:1140px;
+	flex-wrap: wrap;
+	margin-left:auto;
+	margin-right: auto;
+	.product-box{
+		flex-basis: 25%;
+	}
 }
