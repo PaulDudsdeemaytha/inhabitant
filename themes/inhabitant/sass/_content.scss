@@ -229,10 +229,60 @@
 	img{
 			min-height: 250px;
 			max-height: 250px;
-			// width: 
 			border-bottom: solid $color_border_box 5px;
 	}
 }
+
+.adven-flex{
+	display: flex;
+	width: 1120px;
+	margin: auto;
+	margin-bottom: 100px;
+	height:500px;
+	.adven-1{
+		flex-basis: 50%;
+		img{
+		height: 540px;
+		width: 540px;
+		object-fit: cover;
+		}
+	}
+	.adven-2{
+		flex-basis: 50%;
+	}
+	.adven-3{
+		display: flex;
+		padding-top:14px;
+	}
+	.adven-pic2 img{
+		width: 560px;
+		height:250px;
+		object-fit: cover;
+
+	}
+	.adven-pic3 img{
+		height: 270px;
+		width: 270px;
+		object-fit: cover;
+		margin-right: 20px;
+
+	}
+	.adven-pic4 img{
+		object-fit: cover;
+		width:270px;
+		height: 270px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 // trying to fix headers of pages so that it doesnt pop over the nav bar
 .entry-title,
 .page-title {
@@ -584,3 +634,6 @@
 		}
 	}
 }
+
+
+

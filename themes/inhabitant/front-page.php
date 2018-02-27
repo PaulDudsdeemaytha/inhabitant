@@ -76,6 +76,41 @@ get_header(); ?>
 	</div>
 </div>
 
+<section>
+	<div class="adventures-head">
+	<h2>Latest Adventures<h2>
+	</div>
+	<div class="adven-flex">
+		<div class="adven-1">
+			<div class="adven-pic1">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/canoe-girl.jpg">
+			</div>
+		</div>
+		<div class="adven-2">
+			<div class="adven-pic2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/beach-bonfire.jpg">
+				
+
+			</div>
+			<div class="adven-3">
+				<div class="adven-pic3">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/mountain-hikers.jpg">
+					
+
+				</div>
+				<div class="adven-pic4">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/night-sky.jpg">
+					
+
+				</div>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	<a class="readentry" href="<?php echo get_permalink(); ?>"> Latest Adventures</a>
+</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
