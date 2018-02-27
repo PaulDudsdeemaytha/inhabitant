@@ -35,11 +35,22 @@ get_header(); ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div class="product-box">
+									
 								<?php if ( has_post_thumbnail() ) : ?>
+								<a href="<?php the_permalink() ?>">
 									<?php the_post_thumbnail( 'large' ); ?>
+								</a>
 								<?php endif; ?>
-								<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-								<?php echo CFS()->get( 'Price' ); ?>
+								<div class="box-content">
+									<div>
+										<?php the_title( '<p>', '</p>' ); ?>
+									</div>
+									<div>
+										<?php echo CFS()->get( 'Price' ); ?>
+									</div>
+									
+								</div>
+								
 							</div>
 						<?php endwhile; ?>
 

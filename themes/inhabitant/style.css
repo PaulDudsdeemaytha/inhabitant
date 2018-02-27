@@ -1044,7 +1044,7 @@ a {
         margin-top: 12px;
         margin-bottom: 30px; }
 
-.post-type-archive-product .shop-nav-container {
+.shop-nav-container {
   padding-top: 100px;
   width: 1140px;
   height: 250px;
@@ -1053,23 +1053,23 @@ a {
   margin-right: auto;
   margin-bottom: 50px;
   border-bottom: dashed #e1e1e1 1px; }
-  .post-type-archive-product .shop-nav-container h1 {
+  .shop-nav-container h1 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 2.5rem;
     font-family: 'Novecento'; }
-  .post-type-archive-product .shop-nav-container a {
+  .shop-nav-container a {
     color: #248A83;
     font-family: 'Novecento';
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-left: 18px;
     margin-right: 18px; }
-    .post-type-archive-product .shop-nav-container a:hover {
+    .shop-nav-container a:hover {
       color: #2f1339;
       cursor: pointer; }
 
-.post-type-archive-product .product-flex {
+.product-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,10 +1077,32 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
-  margin-right: auto; }
-  .post-type-archive-product .product-flex .product-box {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%; }
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .product-flex .product-box {
+    width: 250px;
+    border: solid 1px #e1e1e1;
+    margin-bottom: 30px; }
+    .product-flex .product-box img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 250px;
+      height: 250px;
+      border-bottom: solid 4px #e1e1e1; }
+    .product-flex .product-box p {
+      margin: 0; }
+    .product-flex .product-box .box-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      position: relative;
+      padding: 15px;
+      font-size: .9rem; }
 
 /*--------------------------------------------------------------
 # Media

@@ -525,7 +525,7 @@
 }
 
 // archive product shop page **************
-.post-type-archive-product .shop-nav-container{
+.shop-nav-container{
 	padding-top:100px;
 	width: 1140px;
 	height: 250px;
@@ -554,13 +554,33 @@
 		}
 }
 	
-.post-type-archive-product .product-flex{
+.product-flex{
 	display: flex;
 	width:1140px;
 	flex-wrap: wrap;
 	margin-left:auto;
 	margin-right: auto;
+	justify-content: space-between;
 	.product-box{
-		flex-basis: 25%;
+		width:250px;
+		border: solid 1px $color_border_box;
+		margin-bottom:30px;
+		img{
+			object-fit: cover;
+			width:250px;
+			height:250px;
+			border-bottom: solid 4px $color_border_box;
+		}
+		p{
+			margin: 0;
+		}
+		.box-content{
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			padding: 15px;
+			font-size: .9rem;
+
+		}
 	}
 }
