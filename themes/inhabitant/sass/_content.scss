@@ -60,6 +60,9 @@
 	background-color: white;
 	z-index: 999;
 	border-bottom: solid 1px $color_border_box;
+	.fa-search{
+		font-size: .9rem;
+	}
 	.nav-logo-container{
 		flex-basis: 50%;
 		.logo-nav-box{

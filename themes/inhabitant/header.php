@@ -34,13 +34,23 @@
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class="menu-search">
-						<a href="#">
-							<i class="fas fa-search"></i>
-							<?php get_search_form(); ?>
-							<!-- <input type="text" name="search" placeholder="Type and hit enter..."> -->
+					<button class="search-submit">
+						<i class="fa fa-search"></i>
 
-						</a>
+							</button>	
+					<div class="menu-search">
+
+					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+						<fieldset>
+							<label>
+								<input type="search" class="search-field" placeholder="TYPE AND ENTER" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+							</label>
+
+						</fieldset>
+						<a href="#">
+						</a>	
+					</form>
+
 					</div>
 				</nav><!-- #site-navigation -->
 							</header><!-- #masthead -->
