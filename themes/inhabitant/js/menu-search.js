@@ -1,6 +1,5 @@
-
-
-      (function($) {
+$( document ).ready
+           (function($) {
         var $searchSubmit =  $(".site-header .search-submit");
         var $searchField = $(".site-header .search-field");
         var $searchForm = $(".site-header .search-form");
@@ -27,7 +26,7 @@
         
       })( jQuery );
 
-
+    
 
 
 
