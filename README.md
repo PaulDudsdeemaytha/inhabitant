@@ -1,6 +1,6 @@
 # Project 4 - Inhabitent
 
-![Alt text](images/screenshot.jpg)
+![Alt text](themes/inhabitant/images/screenshot.jpg)
 
 Inhabitent is a hipster camping website built on WordPress where I had to make a custome theme to meet a desired look. Much of the time used on this project involved planning the CSS to be as effiecient as posssible. 
 
