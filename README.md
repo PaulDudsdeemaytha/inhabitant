@@ -1,4 +1,4 @@
-# Inhabitent - Custom Wordpress Theme
+# Inhabitant - Custom Wordpress Theme
 
 ![Alt text](themes/inhabitant/images/screenshot.jpg)
 
